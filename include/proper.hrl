@@ -114,3 +114,11 @@
 -compile({parse_transform, proper_transformer}).
 -endif.
 -endif.
+
+
+%%------------------------------------------------------------------------------
+%% Enable the grouped style of writing callbacks
+%%------------------------------------------------------------------------------
+-ifdef(PROPER_GROUPED_STYLE).
+-compile({parse_transform, proper_group_commands}).
+-endif.
